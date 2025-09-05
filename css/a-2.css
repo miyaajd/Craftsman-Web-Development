@@ -65,10 +65,14 @@ button {
 }
 .logo {
   width: 20%;
+  height: 100%;
+}
+.logo a {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
+  line-height: 100px;
 }
 .logo h1 {
   color: #fff;
@@ -106,6 +110,7 @@ nav {
   display: flex;
   overflow: hidden;
 }
+
 .slide img {
   flex: 0 0 1200px;
 }
