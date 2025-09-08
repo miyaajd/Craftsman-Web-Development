@@ -25,7 +25,7 @@ button {
   cursor: pointer;
 }
 /* modal */
-.txt-modal {
+.modal {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -51,6 +51,29 @@ button {
   text-align: justify;
   margin: 50px 0 80px 0;
 }
+/* gallery modal */
+.modal-gallery-box {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.modal-gallery-box img {
+  width: 100%;
+}
+.gallery-close {
+  width: 75px;
+  display: block;
+  color: #333;
+  background-color: #fff;
+}
 /*  */
 .wrap {
   width: 1200px;
@@ -62,6 +85,7 @@ button {
   height: 100px;
   background-color: forestgreen;
   display: flex;
+  position: relative;
 }
 .logo {
   width: 20%;
@@ -91,11 +115,11 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-.nav li {
+.nav > li {
   width: calc(100% / 4);
   height: 100%;
 }
-.nav li a {
+.nav > li > a {
   display: block;
   width: 100%;
   height: 100%;
@@ -103,16 +127,51 @@ nav {
   text-align: center;
   font-weight: 600;
 }
-/* slide */
+.depth2{
+  padding-top: 10px;
+  text-align: center;
+  display: none;
+  position: relative;
+  z-index: 999;
+}
+.depth2 li{
+  padding: 8px 0;
+  width: 100%;
+}
+.depth2 a{
+width: 100%;
+}
+.depth2 a:hover{
+  font-weight: 600;
+}
+.depth2Bg{
+  position: absolute;
+  width: 1200px;
+  height: 150px;
+  background-color: #fff;
+  top: 100px;
+  left:0;
+  display: none;
+  z-index: 9;
+}
+/* slide - 아티클섹션에 오버플로우 히든주고 하위를 ul-li구조로 만들기*/
+/* ul에 디스플레이 플렉스 주고 li에 flex:0 0 (슬라이드넓이값px) 설정 */
+/* 자바스크립트에 담을것 슬라이드 ul/ li의 위드값/ 무브슬라이드*/
 .slide {
+  overflow: hidden;
+}
+.img-slide {
   width: 100%;
   height: 300px;
   display: flex;
-  overflow: hidden;
+}
+.img-slide li {
+  width: 100%;
+  flex: 0 0 1200px;
 }
 
-.slide img {
-  flex: 0 0 1200px;
+.img-slide img {
+  width: 100%;
 }
 .section-wrap {
   width: 100%;

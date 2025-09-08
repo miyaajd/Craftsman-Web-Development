@@ -11,7 +11,7 @@
     <script src="js/a-2.js"></script>
   </head>
   <body>
-    <div class="txt-modal">
+    <div class="txt-modal modal">
       <div class="modal-txt-box">
         <h1>POP UP</h1>
         <p>
@@ -25,6 +25,13 @@
         <button id="close">× Close</button>
       </div>
     </div>
+    <!-- 갤러리모달 -->
+    <div class="gallery-modal modal">
+      <div class="modal-gallery-box">
+        <img src="images/green/gallery1.jpg" alt="gallery1" />
+        <button class="gallery-close">× Close</button>
+      </div>
+    </div>
     <div class="wrap">
       <!-- header -->
       <header class="header">
@@ -35,19 +42,50 @@
           </a>
         </div>
         <nav>
+          <div class="depth2Bg"></div>
           <ul class="nav">
-            <li><a href="#">재단소개</a></li>
-            <li><a href="#">후원하기</a></li>
-            <li><a href="#">자료실</a></li>
-            <li><a href="#">스토리</a></li>
+            <li>
+              <a href="#">재단소개</a>
+              <ul class="depth2">
+                <li><a href="#">설립취지</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">찾아오시는길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">후원하기</a>
+              <ul class="depth2">
+                <li><a href="#">국내후원</a></li>
+                <li><a href="#">국외후원</a></li>
+                <li><a href="#">맞춤후원</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">자료실</a>
+              <ul class="depth2">
+                <li><a href="#">서식자료실</a></li>
+                <li><a href="#">사진자료실</a></li>
+                <li><a href="#">후원양식</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">스토리</a>
+              <ul class="depth2">
+                <li><a href="#">웹진</a></li>
+                <li><a href="#">보고서</a></li>
+                <li><a href="#">나의 후원</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </header>
       <!-- slide -->
       <article class="slide">
-        <img src="images/green/green3.jpg" alt="slide3" />
-        <img src="images/green/green2.jpg" alt="slide2" />
-        <img src="images/green/green.png" alt="slide1" />
+        <ul class="img-slide">
+          <li><img src="images/green/green3.jpg" alt="slide3" /></li>
+          <li><img src="images/green/green2.jpg" alt="slide2" /></li>
+          <li><img src="images/green/green.png" alt="slide1" /></li>
+        </ul>
       </article>
       <!-- section -->
       <div class="section-wrap">
@@ -67,7 +105,10 @@
           <ul>
             <li>
               <a href="#"
-                ><img src="images/green/gallery1.jpg" alt="gallery1"
+                ><img
+                  src="images/green/gallery1.jpg"
+                  alt="gallery1"
+                  id="gallery-first"
               /></a>
             </li>
             <li>
