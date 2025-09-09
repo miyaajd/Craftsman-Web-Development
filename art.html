@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>세계의 미술작품</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/art.css" />
+    <!-- js -->
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/art.js"></script>
+  </head>
+  <body>
+    <!-- modal -->
+    <div class="modal">
+      <div class="modal-box">
+        <h1>Title</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
+          repudiandae molestias voluptatum voluptatem sit ipsam ipsum, excepturi
+          laborum, temporibus, maxime quam hic animi labore quia libero.
+          Possimus officia alias labore voluptas quam provident sed aspernatur.
+        </p>
+        <button id="close">× Close</button>
+      </div>
+    </div>
+    <!-- wrap -->
+    <div class="wrap">
+      <!-- header -->
+      <header class="header">
+        <div class="logo">
+          <a href="#"
+            ><h1>
+              세계의 <br />
+              미술작품
+            </h1></a
+          >
+        </div>
+        <nav>
+          <ul class="nav">
+            <li>
+              <a href="#">소장처별</a>
+              <ul class="depth2">
+                <li><a href="#">한국</a></li>
+                <li><a href="#">프랑스</a></li>
+                <li><a href="#">이탈리아</a></li>
+                <li><a href="#">독일</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">장르별</a>
+              <ul class="depth2">
+                <li><a href="#">회화</a></li>
+                <li><a href="#">판화</a></li>
+                <li><a href="#">공예/고대유물</a></li>
+                <li><a href="#">그 외</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">테마별</a>
+              <ul class="depth2">
+                <li><a href="#">초상화/인물</a></li>
+                <li><a href="#">종교</a></li>
+                <li><a href="#">신화/문학</a></li>
+                <li><a href="#">일상/스포츠</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">시대별</a>
+              <ul class="depth2">
+                <li><a href="#">1900년 이전</a></li>
+                <li><a href="#">1900년대</a></li>
+                <li><a href="#">현대</a></li>
+                <li><a href="#">그 외</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- slide -->
+      <article class="slide">
+        <ul class="slide-list">
+          <li>
+            <img src="images/art/slide1.jpg" alt="slide1" />
+            <div class="slide-txt">
+              <h2>세계의 미술작품</h2>
+              <p>세계의 미술작품 둘러보기</p>
+            </div>
+          </li>
+          <li>
+            <img src="images/art/slide2.jpg" alt="slide2" />
+            <div class="slide-txt">
+              <h2>세계의 미술작품</h2>
+              <p>세계의 미술작품 둘러보기</p>
+            </div>
+          </li>
+          <li>
+            <img src="images/art/slide3.jpg" alt="slide3" />
+            <div class="slide-txt">
+              <h2>세계의 미술작품</h2>
+              <p>세계의 미술작품 둘러보기</p>
+            </div>
+          </li>
+        </ul>
+      </article>
+      <!-- contents -->
+      <div class="contents">
+        <section class="notice">
+          <a href="#">공지사항</a>
+          <ul class="no">
+            <li id="first">
+              <a href="#">독일의 미술작품 <span>2025.09.25</span></a>
+            </li>
+            <li>
+              <a href="#">프랑스의 미술작품 <span>2025.07.18</span></a>
+            </li>
+            <li>
+              <a href="#">런던갤러리 초대전 <span>2025.05.15</span></a>
+            </li>
+            <li>
+              <a href="#">어린이 미술작품 관람안내 <span>2025.05.03</span></a>
+            </li>
+          </ul>
+        </section>
+        <section class="gallery">
+          <a href="#">갤러리</a>
+          <ul class="ga">
+            <li>
+              <a href="#"
+                ><img src="images/art/gallery1.jpg" alt="gallery1"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="images/art/gallery2.jpg" alt="gallery2"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="images/art/gallery3.jpg" alt="gallery3"
+              /></a>
+            </li>
+          </ul>
+        </section>
+        <section class="link">
+          <img src="images/art/link.jpg" alt="link" />
+          <div class="link-txt">
+            <h2>세계 미술작품 온라인 감상</h2>
+            <button id="link">보러가기</button>
+          </div>
+        </section>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-logo logo">
+          <a href="#"
+            ><h1>
+              세계의 <br />
+              미술작품
+            </h1></a
+          >
+        </div>
+        <div class="copy">© COPYRIGHT 2025, All Rights Reserved.</div>
+        <div class="sns">
+          <ul id="sns">
+            <li>
+              <a href="#"><img src="images/imgi_11_sns1.png" alt="sns1" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/imgi_12_sns2.png" alt="sns2" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/imgi_13_sns3.png" alt="sns3" /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
