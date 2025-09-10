@@ -25,10 +25,10 @@ $(function () {
 
   //   slide
   const slides = $(".slide-list li");
-  let current = 0
-  setInterval(function(){
-    slides.eq(current).fadeOut(1000)
-    current = (current + 1) % slides.length
-    slides.eq(current).fadeIn(1000)
-  },3000)
+  let current = 0;
+  setInterval(function () {
+    slides.eq(current).fadeOut(1000);
+    current = (current + 1) % slides.length;
+    slides.eq(current).fadeIn(1000);
+  }, 3000);
 });
