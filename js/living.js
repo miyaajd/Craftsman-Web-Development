@@ -13,7 +13,7 @@ $(function () {
   const slide = $(".slide-list li");
   let current = 0;
   setInterval(function () {
-    slide.fadeOut(1000);
+    slide.eq(current).fadeOut(1000);
     current = (current + 1) % slide.length;
     slide.eq(current).fadeIn(1000);
   }, 3000);
