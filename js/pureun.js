@@ -9,10 +9,10 @@ $(function(){
 
     // nav
     $(".nav").mouseenter(function(){
-        $(".depth2").fadeIn(300)
+        $(".depth2").stop().fadeIn(300)
     })
     $(".nav").mouseleave(function(){
-        $(".depth2").fadeOut(300)
+        $(".depth2").stop().fadeOut(300)
     })
 
     // slide

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>영상박물관</title>
+    <!-- css -->
+     <link rel="stylesheet" href="css/media.css">
+     <!-- js -->
+      <script src="js/jquery-1.12.3.js"></script>
+      <script src="js/media.js"></script>
+  </head>
+  <body>
+    <!-- modal -->
+    <div class="modal">
+      <div class="modal-box">
+        <h1 class="title">Title</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente
+          ea totam facilis corporis optio voluptatum nobis tenetur sequi!
+          Consequuntur, voluptate labore! Quisquam voluptas suscipit, obcaecati,
+          nulla eos tenetur quas aspernatur numquam, sunt nihil doloribus
+          excepturi nam quis necessitatibus. Quod velit quaerat magni dolores
+          aperiam molestiae, ullam voluptatum aliquam nulla?
+        </p>
+        <button id="close">× Close</button>
+      </div>
+    </div>
+    <!-- wrap -->
+    <div class="wrap">
+      <!-- main -->
+      <div class="main">
+        <!-- header -->
+        <header class="header">
+          <a href="#"><h1 class="logo">영상박물관</h1></a>
+          <nav>
+            <ul class="nav">
+              <li>
+                <a href="#">박물관소개</a>
+                <ul class="depth2">
+                  <li><a href="#">인사말</a></li>
+                  <li><a href="#">박물관연혁</a></li>
+                  <li><a href="#">박물관 조직도</a></li>
+                  <li><a href="#">오시는 길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">전시</a>
+                <ul class="depth2">
+                  <li><a href="#">전시 리스트</a></li>
+                  <li><a href="#">전시일정</a></li>
+                  <li><a href="#">특별전</a></li>
+                  <li><a href="#">지역작가</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">체험행사</a>
+                <ul class="depth2">
+                  <li><a href="#">문화행사</a></li>
+                  <li><a href="#">진로체험</a></li>
+                  <li><a href="#">명사특강</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">커뮤니티</a>
+                <ul class="depth2">
+                  <li><a href="#">사용자메뉴얼</a></li>
+                  <li><a href="#">박물관 약도</a></li>
+                  <li><a href="#">게시판</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="account">
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">로그인</a></li>
+            </ul>
+          </nav>
+        </header>
+        <!-- contents -->
+        <div class="contents">
+          <section class="banner">
+            <div class="banner-img">
+              <img src="images/media/banner.jpg" alt="banner" />
+            </div>
+            <div class="banner-dscr">
+              <div class="banner-txt">
+                <h2>영상박물관</h2>
+                <p>입장료 무료이벤트 참여하기</p>
+              </div>
+              <button id="banner">바로<br>가기<br />></button>
+            </div>
+          </section>
+          <section class="notice">
+            <a href="#">공지사항</a>
+            <ul class="notice-list">
+              <li id="first">
+                <a href="#">영상박물관 주차장안내 <span>2025.06.24</span></a>
+              </li>
+              <li>
+                <a href="#">영상박물관 오시는길 안내 <span>2025.05.05</span></a>
+              </li>
+              <li>
+                <a href="#"
+                  >영상박물관에서 진로체험하기 <span>2025.04.01</span></a
+                >
+              </li>
+              <li>
+                <a href="#">명사특강 참여하는법 <span>2025.03.03</span></a>
+              </li>
+            </ul>
+          </section>
+          <section class="gallery">
+            <a href="#">갤러리</a>
+            <ul class="gallery-list">
+              <li>
+                <a href="#"
+                  ><img src="images/media/gallery1.jpg" alt="gallery1"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/media/gallery2.jpg" alt="gallery2"
+                /></a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- slide -->
+        <article class="slide">
+          <ul class="slide-list">
+            <li>
+              <img src="images/media/slide1.jpg" alt="slide1" />
+              <div class="slide-txt">
+                <h2 class="slide-title">Media Museum</h2>
+                <p class="slide-p">영상박물관에서 진로체험까지!</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/media/slide2.jpg" alt="slide2" />
+              <div class="slide-txt">
+                <h2 class="slide-title">Media Museum</h2>
+                <p class="slide-p">영상박물관에서 진로체험까지!</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/media/slide3.jpg" alt="slide3" />
+              <div class="slide-txt">
+                <h2 class="slide-title">Media Museum</h2>
+                <p class="slide-p">영상박물관에서 진로체험까지!</p>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+      <!-- footer -->
+       <footer class="footer">
+        <a href="#"><h1 class="logo footer-logo">영상박물관</h1></a>
+        <div class="copy">© COPYRIGHT 2025, All Rights Reserved.</div>
+        <ul class="sns">
+            <li><a href="#"><img src="images/imgi_11_sns1.png" alt="sns1"></a></li>
+            <li><a href="#"><img src="images/imgi_12_sns2.png" alt="sns2"></a></li>
+            <li><a href="#"><img src="images/imgi_13_sns3.png" alt="sns3"></a></li>
+        </ul>
+       </footer>
+    </div>
+  </body>
+</html>

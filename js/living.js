@@ -20,11 +20,11 @@ $(function () {
 
   //   nav
   $(".nav").mouseenter(function(){
-    $(".depth2Bg").fadeIn(300)
-    $(".depth2").fadeIn(300)
+    $(".depth2Bg").stop().fadeIn(300)
+    $(".depth2").stop().fadeIn(300)
   })
   $(".nav").mouseleave(function(){
-    $(".depth2Bg").fadeOut(300)
-    $(".depth2").fadeOut(300)
+    $(".depth2Bg").stop().fadeOut(300)
+    $(".depth2").stop().fadeOut(300)
   })
 });

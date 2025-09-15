@@ -9,12 +9,12 @@ $(function () {
     $(".modal").fadeOut(300);
   });
 
-  // nav
-  $(".nav > li").mouseenter(function () {
-    $(this).find(".depth2").stop().slideDown(300);
+  //   nav
+  $(".nav li").mouseenter(function () {
+    $(this).find(".depth2").stop().fadeIn(300);
   });
-  $(".nav > li").mouseleave(function () {
-    $(this).find(".depth2").stop().slideUp(300);
+  $(".nav li").mouseleave(function () {
+    $(this).find(".depth2").stop().fadeOut(300);
   });
 
   // slide
@@ -25,17 +25,5 @@ $(function () {
       $(this).append($(this).find("li:first-child"));
       $(this).css({ marginTop: 0 });
     });
-  };
-  setInterval(moveSlide, 3000);
-
-  //   tab
-  const tabBtn = $(".tabBtn a")
-  const tabCon = $(".tabContents ul")
-  tabBtn.click(function(e){
-    e.preventDefault()
-    tabBtn.removeClass("active")
-    $(this).addClass("active")
-    tabCon.removeClass("active")
-    tabCon.eq($(this).index()).addClass("active")
-  })
+  };setInterval(moveSlide,3000)
 });

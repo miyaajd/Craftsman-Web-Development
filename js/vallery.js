@@ -2,11 +2,11 @@ $(function () {
   // nav
   $(".nav > li").mouseenter(function (e) {
     e.preventDefault();
-    $(this).find(".depth2").fadeIn(300);
+    $(this).find(".depth2").stop().fadeIn(300);
   });
   $(".nav > li").mouseleave(function (e) {
     e.preventDefault();
-    $(this).find(".depth2").fadeOut(300);
+    $(this).find(".depth2").stop().fadeOut(300);
   });
   // slide
   const slide = $(".slide-list");

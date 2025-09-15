@@ -9,10 +9,10 @@ $(function () {
 
   // nav
   $(".nav li").mouseenter(function () {
-    $(this).find(".depth2").slideDown(300);
+    $(this).find(".depth2").stop().slideDown(300);
   });
   $(".nav li").mouseleave(function () {
-    $(this).find(".depth2").slideUp(300);
+    $(this).find(".depth2").stop().slideUp(300);
   });
 
   // slide

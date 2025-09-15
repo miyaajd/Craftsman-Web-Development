@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>역사 박물관</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/museum.css" />
+    <!-- js -->
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/museum.js"></script>
+  </head>
+  <body>
+    <!-- modal -->
+    <div class="modal">
+      <div class="modal-box">
+        <h1 class="title">Title</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+          mollitia autem placeat, exercitationem dolore velit ex molestiae
+          consequuntur praesentium! Quod repudiandae sint cumque eum facere modi
+          facilis placeat aliquam dolore quibusdam fugiat ex tempore eaque,
+          animi perspiciatis odit excepturi pariatur quos? Dolor maxime, unde
+          modi quas totam eius dolorum assumenda!
+        </p>
+        <button id="close">× Close</button>
+      </div>
+    </div>
+    <!-- wrap -->
+    <div class="wrap">
+      <!-- main -->
+      <div class="main">
+        <!-- header -->
+        <header class="header">
+          <a href="#"><h1 class="logo">역사박물관</h1></a>
+          <nav>
+            <ul class="nav">
+              <li>
+                <a href="#">박물관 소개</a>
+                <ul class="depth2">
+                  <li><a href="#">인사말</a></li>
+                  <li><a href="#">박물관연혁</a></li>
+                  <li><a href="#">유물현황</a></li>
+                  <li><a href="#">관람안내</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">전시</a>
+                <ul class="depth2">
+                  <li><a href="#">선사시대</a></li>
+                  <li><a href="#">삼국시대</a></li>
+                  <li><a href="#">조선시대</a></li>
+                  <li><a href="#">근대시대</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">연구</a>
+                <ul class="depth2">
+                  <li><a href="#">생활유적</a></li>
+                  <li><a href="#">분묘유적</a></li>
+                  <li><a href="#">생산유적</a></li>
+                  <li><a href="#">통신유적</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">교육</a>
+                <ul class="depth2">
+                  <li><a href="#">문화행사</a></li>
+                  <li><a href="#">진로체험</a></li>
+                  <li><a href="#">외부교육</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <!-- contents -->
+        <div class="contents">
+          <section class="notice">
+            <a href="#">공지사항</a>
+            <ul class="notice-list">
+              <li id="first">
+                <a href="#"
+                  >역사박물관 유실물 센터 운영안내 <span>2025.08.23</span></a
+                >
+              </li>
+              <li>
+                <a href="#">진로체험 일정안내 <span>2025.07.15</span></a>
+              </li>
+              <li>
+                <a href="#">역사박물관 외부교육 안내 <span>2025.05.23</span></a>
+              </li>
+              <li>
+                <a href="#"
+                  >역사박물관 관람티켓 요금안내서 <span>2025.04.28</span></a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="gallery">
+            <a href="#">갤러리</a>
+            <ul class="gallery-list">
+              <li>
+                <a href="#"
+                  ><img src="images/museum/galley1.webp" alt="gallery1"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/museum/gallery2.jpg" alt="gallery2"
+                /></a>
+              </li>
+            </ul>
+          </section>
+          <section class="link">
+            <ul class="link-list">
+              <li>
+                <a href="#"
+                  ><img src="images/museum/link1.jpg" alt="link1" />
+                  <div class="link-txt">바로가기</div></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/museum/link2.jpg" alt="link2" />
+                  <div class="link-txt">바로가기</div></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/museum/link3.jpg" alt="link3" />
+                  <div class="link-txt">바로가기</div></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/museum/slide111.jpg" alt="link4" />
+                  <div class="link-txt">바로가기</div></a
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- slide -->
+        <article class="slide">
+          <ul class="slide-list">
+            <li>
+              <img src="images/museum/slide111.jpg" alt="slide1" />
+              <div class="slide-txt">
+                <h2 class="slide-title">역사속으로</h2>
+                <p class="slide-p">역사박물관에서 떠나는 시간여행 !</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/museum/slide1.jpg" alt="slide2" />
+              <div class="slide-txt">
+                <h2 class="slide-title">역사속으로</h2>
+                <p class="slide-p">역사박물관에서 떠나는 시간여행 !</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/museum/slide3.jpg" alt="slide3" />
+              <div class="slide-txt">
+                <h2 class="slide-title">역사속으로</h2>
+                <p class="slide-p">역사박물관에서 떠나는 시간여행 !</p>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <a href="#"><h1 class="logo footer-logo">역사박물관</h1></a>
+        <div class="copy">© COPYRIGHT 2025, All Rights Reserved.</div>
+        <div class="family">
+          <select name="family" id="family">
+            <option value="museum">역사박물관</option>
+            <option value="family1">family1</option>
+            <option value="family2">family2</option>
+          </select>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

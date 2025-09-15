@@ -1,0 +1,274 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+button {
+  all: unset;
+  display: block;
+  cursor: pointer;
+}
+
+/* modal */
+.modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+}
+.modal-box {
+  width: 350px;
+  height: 450px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* wrap */
+.wrap {
+  width: 100%;
+  height: 100vh;
+}
+
+/* main */
+.main {
+  width: 100%;
+  height: calc(100% - 100px);
+  display: flex;
+}
+
+/* header */
+.header {
+  width: 200px;
+  height: 100%;
+}
+.logo {
+  width: 100%;
+  line-height: 100px;
+  color: darkslateblue;
+  font-size: 26px;
+  text-align: center;
+}
+nav {
+  width: 100%;
+  height: calc(100% - 100px);
+  background-color: darkslateblue;
+}
+.nav {
+  width: 100%;
+}
+.nav li {
+  width: 100%;
+  position: relative;
+}
+.nav a {
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+.nav a:hover {
+  background-color: #fff;
+  color: darkslateblue;
+}
+.depth2 {
+  width: 100%;
+  height: 200px;
+  background-color: darkslateblue;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  display: none;
+}
+.nav li:nth-child(3) .depth2,
+.nav li:nth-child(4) .depth2 {
+  height: 150px;
+}
+/*  */
+.account {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.account a {
+  line-height: 50px;
+  color: #ddd;
+  font-size: 14px;
+}
+
+/* contents */
+.contents {
+  width: 400px;
+  height: 100%;
+}
+.banner {
+  width: 100%;
+  height: 20%;
+  display: flex;
+}
+.banner-img {
+  width: 40%;
+  height: 100%;
+}
+.banner-dscr {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.banner-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner-txt h2 {
+  font-size: 16px;
+}
+.banner-txt p {
+  font-size: 14px;
+}
+#banner {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: darkslateblue;
+}
+.notice {
+  width: 100%;
+  height: 40%;
+}
+.notice > a,
+.gallery > a {
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 500;
+  background-color: rgb(171, 162, 226);
+  color: #fff;
+}
+.notice-list {
+  width: 100%;
+  height: calc(100% - 40px);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.notice-list a {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery {
+  width: 100%;
+  height: 40%;
+}
+.gallery-list {
+  width: 100%;
+  height: calc(100% - 40px);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.gallery-list li {
+  width: calc(100% / 2);
+}
+.gallery-list img:hover {
+  opacity: 0.7;
+}
+/* slide */
+.slide {
+  width: calc(100% - 600px);
+  height: 100%;
+  overflow: hidden;
+}
+.slide-list {
+  width: 100%;
+  height: 100%;
+}
+.slide-list li {
+  position: relative;
+}
+.slide-txt {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 24px;
+}
+.slide-title{
+    color: #fff;
+    font-size: 32px;
+}
+.slide-p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #555;
+    display: flex;
+}
+.footer-logo{
+    width: 200px;
+    height: 100%;
+    color: #aaa;
+}
+.copy{
+    width: calc(100% - 400px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+}
+.sns{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
