@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오픈뱅킹</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/open.css" />
+    <!-- js -->
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/open.js"></script>
+  </head>
+  <body>
+    <!-- modal -->
+    <div class="modal">
+      <div class="modal-box">
+        <h1 class="title">Title</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          nesciunt ab perspiciatis rem doloribus, ex commodi nobis assumenda,
+          eligendi facere nulla libero aliquam praesentium! Dolore perferendis
+          praesentium deserunt maiores quas, aliquam iusto corrupti quaerat
+          repudiandae optio, rerum accusantium libero distinctio quae impedit?
+          Iure deserunt et, cumque maiores quo voluptas quod.
+        </p>
+        <button id="close">× Close</button>
+      </div>
+    </div>
+    <!-- wrap -->
+    <div class="wrap">
+      <div class="inner">
+        <!-- header -->
+        <header class="header">
+          <a href="#"><h1 class="logo">오픈뱅킹</h1></a>
+          <nav>
+            <ul class="nav">
+              <li>
+                <a href="#">조회</a>
+                <ul class="depth2">
+                  <li><a href="#">계좌조회</a></li>
+                  <li><a href="#">거래내역조회</a></li>
+                  <li><a href="#">휴면계좌 조회</a></li>
+                  <li><a href="#">수표/어음 조회</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">이체</a>
+                <ul class="depth2">
+                  <li><a href="#">계좌이체</a></li>
+                  <li><a href="#">다계좌이체</a></li>
+                  <li><a href="#">자동이체</a></li>
+                  <li><a href="#">예약이체</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">공과금</a>
+                <ul class="depth2">
+                  <li><a href="#">지로/생활요금</a></li>
+                  <li><a href="#">지방세</a></li>
+                  <li><a href="#">국세/관세</a></li>
+                  <li><a href="#">벌칙금/벌과금</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">외환</a>
+                <ul class="depth2">
+                  <li><a href="#">금리</a></li>
+                  <li><a href="#">환율/외화예금</a></li>
+                  <li><a href="#">글로벌뱅킹</a></li>
+                  <li><a href="#">외화송금</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <!--  -->
+      <div class="depth2Bg"></div>
+      <!-- slide -->
+      <article class="slide">
+        <ul class="slide-list">
+          <li>
+            <img src="images/open/slide1.jpg" alt="slide1" />
+            <div class="slide-txt">
+              <h2 class="slide-title">다양한 OS와 브라우저에서 열리는</h2>
+              <h4 class="slide-sub">오픈뱅킹</h4>
+            </div>
+          </li>
+          <li>
+            <img src="images/open/slide2.webp" alt="slide2" />
+            <div class="slide-txt">
+              <h2 class="slide-title">다양한 OS와 브라우저에서 열리는</h2>
+              <h4 class="slide-sub">오픈뱅킹</h4>
+            </div>
+          </li>
+          <li>
+            <img src="images/open/slide3.jpg" alt="slide3" />
+            <div class="slide-txt">
+              <h2 class="slide-title">다양한 OS와 브라우저에서 열리는</h2>
+              <h4 class="slide-sub">오픈뱅킹</h4>
+            </div>
+          </li>
+        </ul>
+        <div class="inner">
+          <!-- link -->
+          <div class="link">
+            <ul class="link-list">
+              <li>
+                <a href="#"
+                  ><img src="images/technical/busi.png" alt="link1"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/technical/acco.png" alt="link2"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/technical/call.png" alt="link3"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/technical/web.png" alt="link4"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/technical/com.png" alt="link5"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <div class="inner">
+        <!-- banner -->
+       <section class="banner">
+        <div class="banner-img">
+            <img src="images/open/banner.png" alt="banner">
+        </div>
+        <div class="banner-dscr">
+            <div class="banner-txt">
+                <h4 class="banner-title">편리한 오픈뱅킹</h4>
+                <p class="banner-p">은행업무를 언제 어디서나 간편하게 !</p>
+            </div>
+            <a href="#"><button id="banner">바로가기 ></button></a>
+        </div>
+       </section>
+       <!-- tab -->
+        <section class="no-ga">
+            <div class="tabBtn">
+                <a href="#" class="active">공지사항</a>
+                <a href="#">갤러리</a>
+            </div>
+            <ul class="notice active">
+                <li id="first"><a href="#">오픈뱅킹 서비스 오류관련 <span>2025.08.17</span></a></li>
+                <li><a href="#">오픈뱅킹 서비스 간편하게 신청하기 <span>2025.07.13</span></a></li>
+                <li><a href="#">휴면계좌 해제하기 <span>2025.05.30</span></a></li>
+                <li><a href="#">외화송금관련 자주묻는 질문 <span>2025.04.11</span></a></li>
+            </ul>
+            <ul class="gallery">
+                <li><a href="#"><img src="images/open/gallery1.jpg" alt="gallery1"></a></li>
+                <li><a href="#"><img src="images/open/gallery2.png" alt="gallery2"></a></li>
+                <li><a href="#"><img src="images/open/gallery3.webp" alt="gallery3"></a></li>
+            </ul>
+        </section>
+        <!-- footer -->
+         <footer class="footer">
+            <a href="#"><h1 class="logo footer-logo">오픈뱅킹</h1></a>
+            <div class="footer-right">
+                <ul class="footer-nav">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">저작권보호방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                </ul>
+                <div class="copy">© COPYRIGHT 2025, All Rights Reserved.</div>
+            </div>
+         </footer>
+      </div>
+    </div>
+  </body>
+</html>
