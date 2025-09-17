@@ -194,14 +194,18 @@ nav {
 .no {
   padding: 10px;
   width: 100%;
+  height: calc(100% - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .no a {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px;
 }
 .ga {
   width: 100%;
+  height: calc(100% - 40px);
   padding: 10px;
   display: flex;
   align-items: center;

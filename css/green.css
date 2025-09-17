@@ -200,7 +200,7 @@ width: 100%;
   padding: 8px 10px;
   display: flex;
   justify-content: space-between;
-  background-color: #efefef;
+  /* background-color: #efefef; */
 }
 .gallery > ul {
   width: 100%;
@@ -209,7 +209,7 @@ width: 100%;
   align-items: center;
   gap: 8px;
   padding: 10px;
-  background-color: #efefef;
+  /* background-color: #efefef; */
 }
 .gallery > ul > li {
   width: calc(100% / 3);

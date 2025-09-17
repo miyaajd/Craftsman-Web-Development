@@ -208,7 +208,7 @@ nav {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  justify-content: space-around;
 }
 .notice-list a {
   display: flex;

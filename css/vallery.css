@@ -176,10 +176,11 @@ section > a {
 }
 .notice-list {
   /* background-color: #ddd; */
+  height: calc(100% - 40px);
   padding: 12px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  justify-content: space-around;
 }
 .notice-list a {
   display: flex;
