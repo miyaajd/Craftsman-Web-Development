@@ -40,3 +40,15 @@ h1{
     font-weight: bold;
     background-color: khaki;
 }
+.code{
+    padding-top: 50px;
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.code a{
+    display: inline-block;
+    text-decoration: underline;
+}
